@@ -5,24 +5,62 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Blog Post - Start Bootstrap Template</title>
+        <title>Blog Post - A guide to get started on your SOP</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+          body {
+            padding: 25px;
+            background-color: white;
+            color: black;
+            font-size: 25px;
+          }
+          .dark-mode {
+            background-color: black;
+            color: white;
+          }
+          .light-mode {
+            background-color: white;
+            color: black;
+          }
+        </style>
     </head>
     <body>
+
+<!--         <h3 id="DarkModetext">Dark Mode is OFF</h3>
+        <button onclick="darkMode()">Darkmode</button>
+        <button onclick="lightMode()">LightMode</button> -->
+        <script>
+          function darkMode() {
+            var element = document.body;
+            var content = document.getElementById("DarkModetext");
+            element.className = "dark-mode";
+            content.innerText = "Dark Mode is ON";
+          }
+          function lightMode() {
+            var element = document.body;
+            var content = document.getElementById("DarkModetext");
+            element.className = "light-mode";
+            content.innerText = "Dark Mode is OFF";
+          }
+        </script>
+
+
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="#!">Start Bootstrap</a>
+                <!-- <a class="navbar-brand" href="#!">Start Reading</a> -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!" onclick="darkMode()">Dark Mode</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!" onclick="lightMode()">Light Mode</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="tips.html">Tips</a></li>
                     </ul>
                 </div>
             </div>
@@ -30,15 +68,15 @@
         <!-- Page content-->
         <div class="container mt-5">
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-16">
                     <!-- Post content-->
                     <article>
                         <!-- Post header-->
                         <header class="mb-4">
                             <!-- Post title-->
-                            <h1 class="fw-bolder mb-1">asncsdbkhjfbvake</h1>
+                            <h1 class="fw-bolder mb-1">The Mend Library</h1>
                             <!-- Post meta content-->
-                            <div class="text-muted fst-italic mb-2">Posted on January 1, 2021 by Divyanshu Sahu</div>
+                            <div class="text-muted fst-italic mb-2">Posted on January 1, 2022 by Divyanshu Sahu</div>
                             <!-- Post categories-->
 <!--                             <a class="badge bg-secondary text-decoration-none link-light" href="#!">Grad school</a>
                             <a class="badge bg-secondary text-decoration-none link-light" href="#!">Freebies</a> -->
@@ -47,102 +85,144 @@
 <!--                         <figure class="mb-4"><img class="img-fluid rounded" src="https://dummyimage.com/900x400/ced4da/6c757d.jpg" alt="..." /></figure> -->
                         <!-- Post content-->
                         <section class="mb-5">
-                            <p class="fs-5 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe.</p>
-                            <p class="fs-5 mb-4">The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                            <p class="fs-5 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
-                            <h2 class="fw-bolder mb-4 mt-5">I have odd cosmic thoughts every day</h2>
-                            <p class="fs-5 mb-4">For me, the most fascinating interface is Twitter. I have odd cosmic thoughts every day and I realized I could hold them to myself or share them with people who might be interested.</p>
-                            <p class="fs-5 mb-4">Venus has a runaway greenhouse effect. I kind of want to know what happened there because we're twirling knobs here on Earth without knowing the consequences of it. Mars once had running water. It's bone dry today. Something bad happened there as well.</p>
+                            <p style = "text-align: justify" class="fs-5 mb-4">So you have the first draft of your SOP ready and you are now wondering how you can improve upon it. Remeber that a typical SOP takes months to take its final shape. Getting started early is the key. But even if you start late it is not impossible to work your way through</p>
+
+
+                            <h2 class="fw-bolder mb-4 mt-5">Git it</h2>
+                            <p style = "text-align: justify" class="fs-5 mb-4">
+                            Before you start making changes to your SOP, we would like you to meet Git. This is a version control tool and will probably be the most useful tool you will ever use not just for your SOP but also for anything which requires you to keep a track of the progress you have made. Git stores all the progress you made along with all the previous versions stored safely so you can revert back to any old version anytime.</p>
+
+                            <p style = "text-align: justify" class="fs-5 mb-4">
+                            The best part about Git is that it’s free (and so is the internet). So if you really want a structured progress towards Git, google it and get started on it. Use it to keep a progress of your mends and also create different branches for different universities and different versions of each of those universities. </p>
+
+
+                            <p style = "text-align: justify" class="fs-5 mb-4">
+                            There are also cheat sheets available online for Git which sometimes are life-savers.</p>
+
+
+                            <h2 class="fw-bolder mb-4 mt-5">Hit the spot</h2>
+                            <p style = "text-align: justify" class="fs-5 mb-4">
+                            We are sure that you have done many projects/internships during your undergraduate study which is always a good thing. However, stating all of them in your SOP can do more harm than good. SOP's are meant to be a concise representation of your past, present, and future (and we cannot emphasize on this more). If you have your first draft ready, you might already have done the mistake of listing basically everything you have done to woo the admission committee but that is probably the last thing you would want to do and we will tell you why.</p>
+
+                            <p style = "text-align: justify" class="fs-5 mb-4">In most graduate schools, there are thousands of applicants applying to a program. The probability of your SOP being read in its entirety is less if it is lengthy and wordy. An SOP should be easy to read at first glance and the reader should be able to get your point easily.  </p>
+
+
+                            <p style = "text-align: justify" class="fs-5 mb-4">Now that you have understood the mindset behind these changes, start mending your SOP but keep the first draft alive (trust me it will help you a lot). What projects you state really depends on what program and university you are applying to. So after you have the first draft ready, prune each project paragraph you have written. A good practice of writing any project paragraph is as follows: </p>
+
+                             <ol style = "text-align: justify" class="fs-5 mb-4">
+                              <li>Introduce the project, the place you pursued it, and why you chose to pursue that project in one or two sentences.</li>
+                              <li>The next one or two sentences will be what you did. Include some technical terms relevant to your program here if possible otherwise a simple description of approach towards your project also suffices.</li>
+                              <li>End the project paragraph by concluding your project deliverables, what you learnt and especially, how this project helped you grow in your quest to pursue your passion.</li>
+                            </ol> 
+
+
+
+                            <h2 class="fw-bolder mb-4 mt-5">Too much soda is not good for health</h2>
+
+
+                            <p style = "text-align: justify" class="fs-5 mb-4">
+                            If you read the above section carefully, we have mentioned the structure in which you should represent any project in your SOP. When we say two or three sentences we mean it. The last thing you might want to do is make a project paragraph so long that just by looking at it, the admission committee might try to skip it.    
+                            </p>
+
+                            <p style = "text-align: justify" class="fs-5 mb-4">
+                            While reviewing many SOP’s we have experienced this as well. Writing every little detail about your SOP will not only make it difficult for the admission committee to understand your point, but also will make you miss the point of writing your journey. Let the resume take care of the technical intricacies of your project. Your aim while describing a project is to capture the technical gist in a concise way and explain why you did that project and how it helped you grow.   
+                            </p>
+
+
+
+                            <p style = "text-align: justify" class="fs-5 mb-4">
+                            This might seem like a herculean task at first but we have a simple way you can figure this out. For every sentence in your paragraph, ask yourself the impact that sentence makes as a whole in representing that project. Is that sentence redundant?. Can you merge two sentences together in a concise way?   
+                            </p>
+
+
+                            <p style = "text-align: justify" class="fs-5 mb-4">
+                            Note that if you are trying to merge two sentences keep the sentences short. Sentences two or three lines long are a bad idea. It’s too much for someone to comprehend in one go. Look at the way this blog is written if you want a reference. The sentences are kept as short and concise as possible. Also, each paragraph is kept short and contains an agenda of information transfer.  
+                            </p>
+
+                            <p style = "text-align: justify" class="fs-5 mb-4">
+                            Your SOP should in fact look structurally similar.  
+                            </p>
+
+                            <h2 class="fw-bolder mb-4 mt-5">Say it, don’t spray it</h2>
+
+
+                            <p style = "text-align: justify" class="fs-5 mb-4">
+                            The flow of your SOP will also determine how easy the information is to comprehend. While showing your journey, you might want to take care about the flow of that information. A general practice in showing your journey is to complete everything related to a phase of life and move on to the next one from there after.   
+                            </p>
+
+                            <p style = "text-align: justify" class="fs-5 mb-4">
+                            For example, you are talking about your undergraduate studies, and you mentioned something about a particular internship. FInish everything about that internship or your undergrad (in more than one paras if you want ofcourse) and move on to your job experience or your next part of your journey. No one in our perspective will have the memory to remember a certain project that you referenced later in SOP that was written earlier.    
+                            </p>
+
+
+
+                            <p style = "text-align: justify" class="fs-5 mb-4">
+                            Finish your TA, RA, Projects, competitions, extra curricular, and everything else you wish to tell about your undergrad together (and chronologically if possible). Note that by ‘together’ we mean a chronological sequence of events that makes sense intuitively. A mismatch in the chronology of your experiences might just confuse the admission committee enough to make the difference between your admit and reject. 
+                            </p>
+
+
+
+                            <h2 class="fw-bolder mb-4 mt-5">Too many cooks spoil the broth </h2>
+
+
+                            <p style = "text-align: justify" class="fs-5 mb-4">
+                            A very common mistake we have often seen is that of making your SOP sound like your LOR. Making promises of your persistence, hard work, intelligence and more might do more harm than good. Not only are you making your SOP redundant to your LOR but also wasting important word count which you could have used to describe your journey better.   
+                            </p>
+
+                            <p style = "text-align: justify" class="fs-5 mb-4">
+                            Let the LOR’s take care of the part which screams how intelligible and persistent you are with all the other ingredients to woo the admission committee. The aim of the SOP as we have stated is to justify your purpose for pursuing higher studies. Remain focused on that. We are sure you have a lot of things to write using the space you just created by deleting your accolades. Use this space to describe your project better if you want to now.    
+                            </p>
+
+
+
+                            <p style = "text-align: justify" class="fs-5 mb-4">
+                            We would also like to extend the same advice for your SOP’s being like your resume. There will be no doubt redundancy between your SOP and your resume and that is what should be the case. Your SOP’s describe what your resume can’t: your journey and how you grew with it. Make it so that your SOP reflects the same and is not just an elaboration of the stuff mentioned in your resume.
+                            </p>
+
+
+
+                            <h2 class="fw-bolder mb-4 mt-5">Make a solid trailer and end with a bang! </h2>
+
+
+                            <p style = "text-align: justify" class="fs-5 mb-4">
+                            The most important part of your SOP might just be the first and last paragraphs of your SOP’s. The first para as the name suggests, is the first thing the admission committee will read in your SOP. Remember that the first para of your SOP is to summarise the aim and state your intentions clearly. How you start is entirely dependent on you but some mistakes to avoid are:    
+                            </p>
+
+
+
+                             <ol style = "text-align: justify" class="fs-5 mb-4">
+                              <li>Don’t go overboard with your childhood: More often than expected, we see a lot of SOP’s make their first para all be about their childhood experiences and how it shaped them to be ready for their major in undergrad. This is good if you keep it concise.</li>
+                              <li>Use full forms wherever possible: Whenever you mention your program, make sure to write the entire name of the program and the university. You can ofcourse use abbreviations if you use the name of university too often in your SOP but try to avoid them. Avoid short forms like MS, MSE etc.</li>
+                              <li>Avoid unnecessary information: Take very good care of the information that goes into the first paragraph of your SOP. Avoid writing things that they would already know. For example, if you are applying to a robotics grad school. Writing that you wish to pursue a Master's in robotics is probably a bad idea. Instead write what led you to choose this field and how you got here.</li>
+                            </ol> 
+
+
+                            <p style = "text-align: justify" class="fs-5 mb-4">
+                            The last paragraph (or the last two depending on your choice) will be about the university and why you think their program is the best for you. Avoid stating irrelevant information like the rank of that university or something of that sort. Instead state what professor’s you are most interested to work with and why their research woo’d you the most. Write the things you look forward to learning and what courses you think are best suited to teach you those concepts.   
+                            </p>
+
+                            <p style = "text-align: justify" class="fs-5 mb-4">
+                            The last para of your SOP will be a culmination of everything you wrote in your SOP till now. A grand finale you can say. Merge your experience here. Show what you lack and how getting into this program is critical in your journey. It is also important to state in the last para as to what you will do after you have completed your studies (be concise, don't go overboard here).    
+                            </p>
+
+                            
+                            <p style = "text-align: justify" class="fs-5 mb-4">
+                            Finish the SOP with a thanks to the admission committee for taking out the time and effort to read your story.     
+                            </p>
+
+
+                            <h2 class="fw-bolder mb-4 mt-5">Reach out </h2>
+                            <p class="fs-5 mb-4">It is important that you reach out to the seniors already studying at your dream university and ask them for their review on your SOP and what you can improve. If you get enough reviews, your SOP is already there but this requires efforts and follow-ups. Remember that the seniors you are asking for a review from are already in grad school. They probably haven’t slept in a long time or have a ton of submissions ahead of them. </p>
+
+                            <p class="fs-5 mb-4">Respect their time. Adjust your schedule according to their convenience if you can. If you are reaching out, make sure you get to the point quickly. Be concise about what program you are applying to and what you want from them. The biggest flag we have seen from students is that of asking for our SOP’s directly. That is the worst thing you can do for your SOP.</p>
+
+                            <p class="fs-5 mb-4">If you get your hands on a couple of SOP’s from seniors who have made it to the school of your dream, we suggest you not read them. This is because once you read these SOP’s, you will surely have a really strong bias towards their SOP’s. You will subconsciously (if not consciously), start to mend your SOP exactly like the ones you have read which would do real damage to the originality of your story.</p>
                         </section>
                     </article>
-                    <!-- Comments section-->
-                    <section class="mb-5">
-                        <div class="card bg-light">
-                            <div class="card-body">
-                                <!-- Comment form-->
-                                <form class="mb-4"><textarea class="form-control" rows="3" placeholder="Join the discussion and leave a comment!"></textarea></form>
-                                <!-- Comment with nested comments-->
-                                <div class="d-flex mb-4">
-                                    <!-- Parent comment-->
-                                    <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
-                                    <div class="ms-3">
-                                        <div class="fw-bold">Commenter Name</div>
-                                        If you're going to lead a space frontier, it has to be government; it'll never be private enterprise. Because the space frontier is dangerous, and it's expensive, and it has unquantified risks.
-                                        <!-- Child comment 1-->
-                                        <div class="d-flex mt-4">
-                                            <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
-                                            <div class="ms-3">
-                                                <div class="fw-bold">Commenter Name</div>
-                                                And under those conditions, you cannot establish a capital-market evaluation of that enterprise. You can't get investors.
-                                            </div>
-                                        </div>
-                                        <!-- Child comment 2-->
-                                        <div class="d-flex mt-4">
-                                            <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
-                                            <div class="ms-3">
-                                                <div class="fw-bold">Commenter Name</div>
-                                                When you put money directly to a problem, it makes a good headline.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Single comment-->
-                                <div class="d-flex">
-                                    <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
-                                    <div class="ms-3">
-                                        <div class="fw-bold">Commenter Name</div>
-                                        When I look at the universe and all the ways the universe wants to kill us, I find it hard to reconcile that with statements of beneficence.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <!-- Side widgets-->
-                <div class="col-lg-4">
-                    <!-- Search widget-->
-                    <div class="card mb-4">
-                        <div class="card-header">Search</div>
-                        <div class="card-body">
-                            <div class="input-group">
-                                <input class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
-                                <button class="btn btn-primary" id="button-search" type="button">Go!</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Categories widget-->
-                    <div class="card mb-4">
-                        <div class="card-header">Categories</div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <ul class="list-unstyled mb-0">
-                                        <li><a href="#!">Web Design</a></li>
-                                        <li><a href="#!">HTML</a></li>
-                                        <li><a href="#!">Freebies</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-6">
-                                    <ul class="list-unstyled mb-0">
-                                        <li><a href="#!">JavaScript</a></li>
-                                        <li><a href="#!">CSS</a></li>
-                                        <li><a href="#!">Tutorials</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Side widget-->
-                    <div class="card mb-4">
-                        <div class="card-header">Side Widget</div>
-                        <div class="card-body">You can put anything you want inside of these side widgets. They are easy to use, and feature the Bootstrap 5 card component!</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <!-- Footer-->
         <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p></div>
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; thegradreadme 2021</p></div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
